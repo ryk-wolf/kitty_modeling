@@ -1,0 +1,42 @@
+#Data for kitty
+
+data;
+
+param max_transaction_amount := 180;
+param fixed_epsilon := 586;
+
+set PEOPLE := A B C D E F ;
+set GIFTS := computer pie vase trip plant hat necklace beethoven;
+
+
+param pers_who_bought_each_gift:
+    computer  pie   vase  trip  plant  hat  necklace  beethoven :=
+A   0         0     1      0    0       1   0         0
+B   0         1     0      0    1       0   0         0
+D   0         0     0      1    0       0   0         0
+C   1         0     0      0    0       0   0         0
+E   0         0     0      0    0       0   0         0
+F   0         0     0      0    0       0   1         1
+;
+
+/*Column "participe a" */
+param pers_giving_each_gift:
+    computer  pie   vase  trip  plant  hat  necklace  beethoven  :=
+A   0         0     1     0     0      1    1         1
+B   0         1     0     1     1      0    0         1
+D   1         0     0     1     1      0    0         1
+C   1         0     0     0     0      0    0         1
+E   0         0     1     0     1      1    1         1
+F   0         0     0     0     0      0    0         1
+;
+
+
+param amount_spent_on_gifts_by_each:
+    computer  pie   vase  trip  plant hat   necklace  beethoven :=
+A   0         0     25    0     0     5     0         0
+B   0         9     0     0     10    0     0         0
+C   1000      0     0     0     0     0     0         0
+D   0         0     0     1200  0     0     0         0
+E   0         0     0     0     0     0     0         0
+F   0         0     0     0     0     0     0         133
+;

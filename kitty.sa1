@@ -1,0 +1,8 @@
+objective number_of_transactions;
+option solver gurobi;
+solve;
+
+display transaction_amount,
+final_total_amount,
+exchanges_counter
+;
