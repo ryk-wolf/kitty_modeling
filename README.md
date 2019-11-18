@@ -8,5 +8,5 @@ Initial setting:
 This college project aimed at modeling a kitty for a birthday party and the funding of gifts.
 Several initial constraints were given:
 - Maximal transaction amount = 180
-- Greedy participant not willing to receive money from enyone
+- Greedy participant not willing to receive money from anyone
 Other constraints were added by analysing the topic and aim.
